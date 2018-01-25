@@ -150,9 +150,9 @@ public class RANSimpl {
 		BigInteger encoded = encode_text_with_dict(text, new BigInteger("0"));
 		String decodedText = decode_text(encoded, text.length());
 		if (!text.equals(decodedText)) {
-	    	log.warning("Decoding test failed");
-	    	throw new RuntimeException("The decoded text does not equal the original text!!!");
-	    }
+	    		log.warning("Decoding test failed");
+	    		throw new RuntimeException("The decoded text does not equal the original text!!!");
+	    	}
 		return encoded;
 	}
 	/**
@@ -168,7 +168,7 @@ public class RANSimpl {
 	    	BigInteger symbol = new_pair[0];
 	    	BigInteger new_x = new_pair[1]; 
 		    
-		    reverse_text.append(num_to_letter.get(symbol.intValue()));
+		reverse_text.append(num_to_letter.get(symbol.intValue()));
 	        working_x = new_x;
 	        counter += 1;
 	    }
